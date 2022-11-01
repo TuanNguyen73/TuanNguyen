@@ -13,12 +13,12 @@ int	main(){
 	if(a == 0){
 		if(b == 0){
 			if(c == 0){
-				cout <<"Phuong trinh vo so nghiem"<< endl;
+				cout <<"Equation with infinite solutions"<< endl;
 			}else{
-				cout <<"Phuong trinh vo nghiem"<< endl;
+				cout <<"The equation has no solution"<< endl;
 			}
 		}else{
-			cout <<"Phuong trinh co 1 nghiem la "<< -c/b << endl;
+			cout <<"Equation has 1 solution: "<< -c/b << endl;
 		}
 	}else{
 		delta = b*b - 4*a*c;
@@ -26,13 +26,13 @@ int	main(){
 		{
 			x1= (-b+sqrt(delta))/(2*a);
 			x2= (-b-sqrt(delta))/(2*a);
-			cout <<"Nghiem thu nhat la: "<< x1 << endl;
-			cout <<"Nghiem thu hai la: "<< x2 << endl;
+			cout <<"1st solution: "<< x1 << endl;
+			cout <<"2nd solution: "<< x2 << endl;
 		} else if (delta == 0)
 		{
-			cout <<"Phuong trinh co nghiem kep la: "<< -b/(2*a) << endl; 
+			cout <<"Equation with double solutions: "<< -b/(2*a) << endl; 
 		}else{
-			cout <<"Phuong trinh vo nghiem!";
+			cout <<"The equation has no solution";
 		}
 	}
 	return 0;
